@@ -9,12 +9,13 @@ import InstagramEmbed from 'react-instagram-embed';
 import { Container, Row, Col } from 'reactstrap';
 import '../css/about.css'
 
+import AboutPage from '../components/PageComponents/About/Page.jsx'
+
 
 const About = () => (
   <Layout>
-    <SideBar />
 
-    <div id="main">
+    {/*<div id="main">
       <section id="about" className="three">
         <div className="container">
           <Row style={{ justifyContent: 'center', textAlign: 'center' }}>
@@ -53,7 +54,7 @@ const About = () => (
               onSuccess={() => {}}
               onAfterRender={() => {}}
               onFailure={() => {}}
-              /*style={{margin:'auto'}}*/
+              /*style={{margin:'auto'}}* /
             />
             <div style={{margin: '5px 2rem 8rem'}}>
                 <h4 style={{color: 'gray!important', fontSize: '1.5rem'}}>More About Me</h4>
@@ -68,7 +69,10 @@ const About = () => (
           </div>
         </div>
       </section>
-    </div>
+</div>*/}
+<AboutPage />
+
+
   </Layout>
 );
 
