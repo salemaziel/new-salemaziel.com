@@ -80,10 +80,12 @@ body, html, #app {
 }
 .gallery-tile .picture-info h2 {
   font-family: 'Oswald';
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: white;
+  text-shadow: 2px 2px 4px black;
 }
 .gallery-tile:hover img {
   -webkit-transform: scale(1.1);

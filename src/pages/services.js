@@ -14,9 +14,9 @@ const Services = () => (
 
             <section id="mygallery" className="mygallery">
                 <div className="container">
-                    <Rgallery id="rgallery"/>
+                  {/*  <Rgallery id="rgallery"/>*/}
                 </div>
-            </section>
+</section>
         </div>
 
       </Layout>

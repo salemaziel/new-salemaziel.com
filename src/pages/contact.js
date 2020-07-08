@@ -20,7 +20,9 @@ import ScrollToTop from 'react-router-scroll-top'
 import HomeHeader from '../components/PageComponents/Home/HomeHeader'
 import { Link } from 'gatsby';
 import config from '../../config';
-import { Row } from 'reactstrap'
+
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 //import Rgallery from '../components/Rgallery'
 //import { Link } from 'gatsby'
 
@@ -152,28 +154,32 @@ const ContactPage = () => (
       <section id="contact" className="four">
         <div className="container">
           <header>
-            <h2>Contact</h2>
+            <h2>Hit Me Up</h2>
           </header>
 
-          <p>
+         {/* <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+         </p>*/}
 
           <form method="post" action="#">
-            <div className="row">
+            <Row style={{margin: 'auto auto 2rem auto', }}>
               <div className="col-6 col-12-mobile">
                 <input type="text" name="name" placeholder="Name" />
               </div>
               <div className="col-6 col-12-mobile">
                 <input type="text" name="email" placeholder="Email" />
               </div>
+              </Row>
+              <Row style={{margin: 'auto auto 2rem auto'}}>
               <div className="col-12">
                 <textarea name="message" placeholder="Message" />
               </div>
+              </Row>
+              <Row>
               <div className="col-12">
                 <input type="submit" value="Send Message" />
               </div>
-            </div>
+              </Row>
           </form>
         </div>
         <div style={{ justifyContent: 'center', alignContent: 'center', textAlign: 'center', margin: '3rem 0 0 0'}}>

@@ -32,15 +32,15 @@ export default function Nav({ sections = [] }) {
         </Link>
         </li>
 
-        <li >
+        {/*<li >
         <Link to="/services" className="NavItems">
           <span className="icon fa-code " />
           Services
         </Link>
-        </li>
+        </li>*/}
 
         <li>
-        <Link to="/gallery" className="NavItems">
+        <Link to="/portfolio" className="NavItems">
           <span className="icon fa-photo" />
           Portfolio
         </Link>

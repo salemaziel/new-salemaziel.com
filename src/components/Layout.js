@@ -23,13 +23,16 @@ class Layout extends Component {
     if (window.Snipcart) {
       window.Snipcart.api.configure('show_continue_shopping', true);
     }
-  }
-
-  componentDidMount() {
     this.timeoutId = setTimeout(() => {
       this.setState({ isPreloaded: false });
     }, 100);
   }
+
+  /*componentDidMount() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({ isPreloaded: false });
+    }, 100);
+  }*/
 
   componentWillUnmount() {
     if (this.timeoutId) {
@@ -70,7 +73,7 @@ class Layout extends Component {
               <html lang="en" />
             </Helmet>
             <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
-              <SideBar /*sections={sections}*/></SideBar>
+              <SideBar /*sections={sections}*/ />
 
               {children}
             </div>
