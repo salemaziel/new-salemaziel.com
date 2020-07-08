@@ -110,7 +110,9 @@ body, html, #app {
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
+  position: absolute;
+  top: 90px;
 }
 
 .imageview > * {
@@ -118,9 +120,11 @@ body, html, #app {
 }
 
 .imageview-image {
-  width: 25em;
-  height: 25em;
+  width: 30em;
+  /*height: 25em;*/
+  height: 100%;
   box-shadow: 0 20px 40px -5px rgba(66, 66, 66, 0.7);
+  
 }
 
 .imageview-info {

@@ -7,8 +7,9 @@ import SideBar from './Sidebar/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { theme } from '../styles/theme';
 import '../css/nosnipfooter.css';
-import '../assets/sass/main.scss';
+//import '../assets/sass/main.scss';
 import PageFooter from './PageFooter';
+import '../css/main.css'
 import './layout.css'
 
 class Layout extends Component {
@@ -73,7 +74,7 @@ class Layout extends Component {
 
               {children}
             </div>
-            <PageFooter />
+            {/*<PageFooter />*/}
           </>
         )}
       />

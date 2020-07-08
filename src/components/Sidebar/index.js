@@ -6,7 +6,7 @@ import TopNav from './TopNav';
 import config from '../../../config';
 import { Link } from 'gatsby'
 
-const pic = require('../../assets/img/persona-lightshadow.png');
+//const pic = require('../../assets/img/persona-lightshadow.png');
 
 
 export default function SideBar({ sections = [] }) {
@@ -20,7 +20,7 @@ export default function SideBar({ sections = [] }) {
       <div id="header">
         <div className="top">
           <Header
-            avatar={pic}
+            /*avatar={pic}*/
             title={config.authorName}
             heading={config.heading}
           />

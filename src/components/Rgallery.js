@@ -14,7 +14,7 @@ class Rgallery extends React.Component {
 		}
 	}
 	componentWillMount() {
-		this._loadData('https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/rpg-2-data.json')
+		this._loadData('https://raw.githubusercontent.com/salemaziel/new-salemaziel.com/master/src/components/PageComponents/Portfolio/screenshots.json')
 	}
 	//componentWillUnmount() {
 	//		this._loadData.abort()
@@ -120,6 +120,7 @@ class Gallery extends React.Component {
 						src={data.src}				
 						name={data.name}
 						desc={data.desc}
+						thumb={data.thumb}
 						_openImageView={this.props._openImageView} />
 				)
 			}
@@ -141,7 +142,7 @@ class Tile extends React.Component {
 			</div>
 			<Image
 				CSSClass="tile-image"
-				src={this.props.src} 
+				src={this.props.thumb} 
 				alt={this.props.name} />
 		</div>
 		)

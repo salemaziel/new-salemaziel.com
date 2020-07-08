@@ -10,6 +10,11 @@
      width: 80%;
 }
 
+.signature {
+    width: 300px;
+    margin: auto;
+
+}
 
 .rainbow {
     background: linear-gradient(to right, orange , yellow, green, cyan, blue, violet);
@@ -22,10 +27,8 @@
 }
 
 @media screen and (max-width: 960px) {
-    .frostglass {
-        top: 3rem;
-        left: 40%;
-        width: 50%;
+    .signature {
+        width: 200px;
     }
 }
 
@@ -36,6 +39,9 @@
         width: 50%;
     }
     .Headerbg {
-        margin: 0 2rem;
+        margin: auto;
+    }
+    .signature {
+        width: 150px;
     }
 }

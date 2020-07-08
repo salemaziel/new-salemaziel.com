@@ -10,19 +10,19 @@
     },
     {
     	"id": 1,
-      "name": "Hills",
+      "name": "White Tigers FC",
       "desc": "Est lo-fi eiusmod nulla jean shorts cred. Officia 8-bit adipisicing paleo, eiusmod shabby chic mlkshk cliche thundercats consectetur ennui.",
       "tags": ["Hills", "Nature", "Forest", "Moutains", "Field"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-2.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6678f492911785.5e5768aee812b.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594199708/salemaziel.com/white-tigers-thumb_gvz1tc.png"
     },
     {
     	"id": 2,
-      "name": "City",
+      "name": "Global Lighting Project",
       "desc": "Laborum velit id salvia, vegan readymade consequat tumblr fanny pack cold-pressed pop-up. Cardigan odio VHS velit hoodie. Tempor proident accusamus deep v cupidatat hell of.",
       "tags": ["City", "Skyline", "Building", "Skyscraper", "Summer"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-3.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/23efac92910925.5e57612e4accc.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592641688/salemaziel.com/globallightingproject_mrv9pe.png"
     },
     {
     	"id": 3,
