@@ -1,5 +1,7 @@
 import React from 'react';
 
+import ContactPage from '../components/PageComponents/Contact/Page'
+
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/Sidebar/index'
@@ -33,7 +35,7 @@ import Col from 'react-bootstrap/Col'
   { id: 'contact', name: 'Contact', icon: 'fa-envelope' },
 ];*/
 
-const ContactPage = () => (
+const Contact = () => (
   <Layout>
     <SideBar /*sections={sections}*/>
     </SideBar>
@@ -149,7 +151,7 @@ const ContactPage = () => (
           </p>
           <Button tag={Link} className="button" to='/about' >Learn More About Me</Button>
         </div>
-</section>*/}
+</section>* /}
 
       <section id="contact" className="four">
         <div className="container">
@@ -159,12 +161,12 @@ const ContactPage = () => (
 
          {/* <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-         </p>*/}
+         </p>* /}
 
           <form method="post" action="#">
             <Row style={{margin: 'auto auto 2rem auto', }}>
               <div className="col-6 col-12-mobile">
-                <input type="text" name="name" placeholder="Name" />
+                <input type="text" name="name" placeholder="Name" id="name" onChange={handleChange}/>
               </div>
               <div className="col-6 col-12-mobile">
                 <input type="text" name="email" placeholder="Email" />
@@ -185,10 +187,12 @@ const ContactPage = () => (
         <div style={{ justifyContent: 'center', alignContent: 'center', textAlign: 'center', margin: '3rem 0 0 0'}}>
         <Footer socialLinks={config.socialLinks} style={{margin: '0!important', padding: '0!important'}}/>
         </div>
-      </section>
+         </section>*/}
+         <ContactPage />
+
     </div>
 
   </Layout>
 );
 
-export default ContactPage;
+export default Contact;
