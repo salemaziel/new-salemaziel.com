@@ -3,15 +3,15 @@
   	{
     	"id": 0,
       "name": "Zenith Roofing Services",
-      "desc": "Art party skateboard meggings plaid tacos, sint echo park ex voluptate mixtape. Single-origin coffee fugiat tote bag, celiac messenger bag quinoa voluptate.",
-      "tags": ["Cobweb", "Tree", "Spider", "Moss", "Nature"],
+      "desc": "Company website for Zenith Roofing Services of San Diego, CA",
+      "tags": ["ZenithRoofing", "website", "portfolio"],
       "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/73da0995012861.5e8d14f7502b2.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
     },
     {
     	"id": 1,
       "name": "White Tigers FC",
-      "desc": "Est lo-fi eiusmod nulla jean shorts cred. Officia 8-bit adipisicing paleo, eiusmod shabby chic mlkshk cliche thundercats consectetur ennui.",
+      "desc": "Official team website for White Tigers Futbol Club Southern CA Division 1",
       "tags": ["Hills", "Nature", "Forest", "Moutains", "Field"],
       "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6678f492911785.5e5768aee812b.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594199708/salemaziel.com/white-tigers-thumb_gvz1tc.png"
@@ -19,7 +19,7 @@
     {
     	"id": 2,
       "name": "Global Lighting Project",
-      "desc": "Laborum velit id salvia, vegan readymade consequat tumblr fanny pack cold-pressed pop-up. Cardigan odio VHS velit hoodie. Tempor proident accusamus deep v cupidatat hell of.",
+      "desc": "Website for 501(c)3 nonprofit Global Lighting Project",
       "tags": ["City", "Skyline", "Building", "Skyscraper", "Summer"],
       "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/23efac92910925.5e57612e4accc.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592641688/salemaziel.com/globallightingproject_mrv9pe.png"
@@ -27,15 +27,15 @@
     {
     	"id": 3,
       "name": "LEDPac",
-      "desc": "Everyday carry tempor man braid roof party, chicharrones copper mug retro officia plaid beard fanny pack listicle. Actually gochujang squid et knausgaard.",
+      "desc": "Company website for LEDpac LLC of San Diego, CA",
       "tags": ["Forest", "Lake", "Rocks", "Nature", "Mountain"],
       "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600340/salemaziel.com/ledpac-full_iassdi.png",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600887/salemaziel.com/ledpac-thumb_kkxapk.png"
     },
     {
     	"id": 4,
       "name": "Chaotic Order Music",
-      "desc": "Exercitation pop-up pariatur letterpress, kitsch quis anim aute godard air plant. Pok pok af la croix sunt lo-fi banjo, hot chicken offal neutra small batch qui readymade VHS gochujang non.",
+      "desc": "Promotional webpage for for metal band Chaotic Order",
       "tags": ["Sea", "Ocean", "Waves", "Surf", "Blue"],
       "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600868/salemaziel.com/chaoticOrder-full_tr6jrw.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600608/salemaziel.com/chaoticOrder-thumb_oznapd.png"
@@ -43,7 +43,7 @@
     {
     	"id": 5,
       "name": "MyGoalign",
-      "desc": "Tilde pabst bicycle rights roof party. Readymade aute crucifix messenger bag fixie, yr tacos qui pop-up truffaut succulents ut. Adipisicing cronut nostrud meditation wolf polaroid.",
+      "desc": "Company website for MyGoalign, a task board project management webapp for engineers",
       "tags": ["Sunset", "Nature", "Cactus", "Desert", "Grass"],
       "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/605d3587003297.5daa8ed097ea7.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601109/salemaziel.com/mygoalign-thumb_zs2z9b.png"
@@ -51,7 +51,7 @@
     {
     	"id": 6,
       "name": "CodeStaff",
-      "desc": "Woke freegan jianbing vice letterpress eiusmod. Irony poke air plant, echo park migas chia marfa put a bird on it farm-to-table celiac pickled blog succulents cillum helvetica.",
+      "desc": "Company website for CodeStaff",
       "tags": ["Branches", "Bush", "Nature", "Tree", "Leaf"],
       "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/902b8b83924431.5d4b5900e455e.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601286/salemaziel.com/codestaff-thumb_jgo64j.png"
@@ -59,19 +59,11 @@
     },
     {
     	"id": 7,
-      "name": "Bridge",
-      "desc": "Tbh hashtag snackwave normcore incididunt cillum. Slow-carb normcore aliqua, listicle magna air plant microdosing locavore pitchfork seitan +1 cronut selfies stumptown fam.",
+      "name": "Elite Care Chiropractic",
+      "desc": "Company website for Elite Care Chiropractic of Encinitas, CA",
       "tags": ["Bridge", "River", "City", "Dusk", "Fog"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-8.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
-    },
-    {
-    	"id": 8,
-      "name": "Lake",
-      "desc": "Meggings PBR&B waistcoat pinterest excepteur aliqua. Gentrify thundercats intelligentsia consectetur, semiotics pork belly pop-up vaporware fam laboris austin 8-bit roof party.",
-      "tags": ["Lake", "Water", "Forest", "Hills", "Deck"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-9.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601755/salemaziel.com/eliteCare-full_kwqswq.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601752/salemaziel.com/eliteCare-thumb_csybfl.png"
     }
   ]
 }

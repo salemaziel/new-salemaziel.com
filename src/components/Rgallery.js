@@ -95,10 +95,10 @@ class ImageView extends React.Component {
 						<button className="imageview-close" onClick={this.props._closeImageView}>x</button>
 						<h2>{this.props.name}</h2>
 						<p className="rgallery">{this.props.desc}</p>
-						<h3 className="tags">Tags</h3>
+						{/*<h3 className="tags">Tags</h3>
 						<ul>
 							{this.props.tags.map(tag => <li>{tag}</li>)}
-						</ul>
+						</ul>*/}
 					</div>
 					
 			</div>
