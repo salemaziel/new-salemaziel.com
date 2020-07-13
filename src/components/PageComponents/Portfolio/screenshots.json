@@ -26,35 +26,35 @@
     },
     {
     	"id": 3,
-      "name": "Forest",
+      "name": "LEDPac",
       "desc": "Everyday carry tempor man braid roof party, chicharrones copper mug retro officia plaid beard fanny pack listicle. Actually gochujang squid et knausgaard.",
       "tags": ["Forest", "Lake", "Rocks", "Nature", "Mountain"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-4.jpg",
+      "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600340/salemaziel.com/ledpac-full_iassdi.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
     },
     {
     	"id": 4,
-      "name": "Sea",
+      "name": "Chaotic Order Music",
       "desc": "Exercitation pop-up pariatur letterpress, kitsch quis anim aute godard air plant. Pok pok af la croix sunt lo-fi banjo, hot chicken offal neutra small batch qui readymade VHS gochujang non.",
       "tags": ["Sea", "Ocean", "Waves", "Surf", "Blue"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-5.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600868/salemaziel.com/chaoticOrder-full_tr6jrw.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594600608/salemaziel.com/chaoticOrder-thumb_oznapd.png"
     },
     {
     	"id": 5,
-      "name": "Sunset",
+      "name": "MyGoalign",
       "desc": "Tilde pabst bicycle rights roof party. Readymade aute crucifix messenger bag fixie, yr tacos qui pop-up truffaut succulents ut. Adipisicing cronut nostrud meditation wolf polaroid.",
       "tags": ["Sunset", "Nature", "Cactus", "Desert", "Grass"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-6.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/605d3587003297.5daa8ed097ea7.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601109/salemaziel.com/mygoalign-thumb_zs2z9b.png"
     },
     {
     	"id": 6,
-      "name": "Branches",
+      "name": "CodeStaff",
       "desc": "Woke freegan jianbing vice letterpress eiusmod. Irony poke air plant, echo park migas chia marfa put a bird on it farm-to-table celiac pickled blog succulents cillum helvetica.",
       "tags": ["Branches", "Bush", "Nature", "Tree", "Leaf"],
-      "src": "https://s3-us-west-2.amazonaws.com/s.cdpn.io/735173/gallery-7.jpg",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/902b8b83924431.5d4b5900e455e.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601286/salemaziel.com/codestaff-thumb_jgo64j.png"
 
     },
     {
