@@ -31,7 +31,7 @@ const SectionTwo = () => (
   <section id="portfolio" className="two">
     <div className="container">
       <header>
-        <h2>Who Am I?</h2>
+        <h2>Who I Am in Pictures, 2020 colorized.</h2>
       </header>
 
       <p>If you're lazy or short on time, this is basically me:</p>

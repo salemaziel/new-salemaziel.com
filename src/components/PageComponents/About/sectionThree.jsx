@@ -7,7 +7,7 @@ import pic6 from '../../../assets/images/pic06.jpg';
 import pic7 from '../../../assets/images/pic07.jpg';
 import pic8 from '../../../assets/images/pic08.jpg';
 
-import { Profilepic } from '../../../assets/images/index'
+import { Profilepic, MeStripedShirt } from '../../../assets/images/index'
 
 import { Link } from 'gatsby'
 
@@ -21,7 +21,7 @@ const SectionThree = () => (
           </header>
 
           <a href="/#" className="image featured">
-            <img src={Profilepic} alt="" style={{maxWidth: '40%', height: 'auto', margin: 'auto'}} />
+            <img src={MeStripedShirt} alt="" style={{maxWidth: '40%', height: 'auto', margin: 'auto'}} />
           </a>
 
           <p>

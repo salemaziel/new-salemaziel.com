@@ -7,7 +7,7 @@ import pic6 from '../../../assets/images/pic06.jpg';
 import pic7 from '../../../assets/images/pic07.jpg';
 import pic8 from '../../../assets/images/pic08.jpg';
 
-import { FTPACAB, UCSB, AlwaysSunny, Hackerman, Lawsdontexist, Revolutionary, WordpressLogo, Terminal2, Linuxlogo, HTML5logo, GatsbyReactLogos, Webservices, UsedToSmoke, CodestaffLogo, Profilepic } from '../../../assets/images/index'
+import { FTPACAB, UCSB, AlwaysSunny, Hackerman, Lawsdontexist, Revolutionary, WordpressLogo, Terminal2, Linuxlogo, HTML5logo, GatsbyReactLogos, Webservices, UsedToSmoke, CodestaffLogo, Profilepic, MeStripedShirt } from '../../../assets/images/index'
 import Row from 'react-bootstrap/Row'
 import InstagramEmbed from 'react-instagram-embed';
 
@@ -27,7 +27,7 @@ const SectionOne = () => (
         </Row>
 
         <a href="#" className="image featured">
-          <img src={Profilepic} alt="" style={{width:'50%', margin: 'auto'}}/>
+          <img src={MeStripedShirt} alt="" style={{width:'50%', margin: 'auto'}}/>
         </a>
 
         <p>

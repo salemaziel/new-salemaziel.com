@@ -21,7 +21,7 @@ class HomeHeader extends React.Component {
                 />
               </div>
               <h3 className="alt" style={{ textShadow: '3px 3px 4px black' }}>
-                Professional Anarchist &#8482; by day. <br />
+                <a href="https://twitter.com/realDonaldTrump/status/827483841589891073?">Professional Anarchist &#8482;</a> by day. <br />
                 <br />
                 Digital Consultant, Web Developer, <br />
                 and System Administrator by night.
