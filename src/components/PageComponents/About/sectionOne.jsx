@@ -10,7 +10,8 @@ import pic8 from '../../../assets/images/pic08.jpg';
 import { FTPACAB, UCSB, AlwaysSunny, Hackerman, Lawsdontexist, Revolutionary, WordpressLogo, Terminal2, Linuxlogo, HTML5logo, GatsbyReactLogos, Webservices, UsedToSmoke, CodestaffLogo, Profilepic, MeStripedShirt } from '../../../assets/images/index'
 import Row from 'react-bootstrap/Row'
 import InstagramEmbed from 'react-instagram-embed';
-
+import Button from 'react-bootstrap/Button'
+import {Link} from 'gatsby'
 
 import Col from 'react-bootstrap/Col'
 
@@ -41,10 +42,12 @@ const SectionOne = () => (
               No, I don't run Arch. Atleast not yet for daily use. Too impractical when I have shit to get done, sometimes I don't feel like spending several hours figuring out why the recent update makes my computer boot into a black screen and chrooting into the system from a live USB when I'm just trying to update a client's website, or worse, when I'm trying to watch It's Always Sunny in Philadelphia and relax. It's pretty fun though, in the absolute nerdiest and uninteresting-to-most-women way possible.
           </p>
           <p>
-            If this About Me section seems choppy and disjointed, its because it is. <br />
+            If this About Me section seems choppy and disjointed, it's because it is.</p>
+            <p>
             I'll add to it later when I'm feeling more Shakespearean and less humble.
           </p>
- 
+          <Button as={Link} className="button" to='/contact' >Contact Me</Button>
+
         <br />
         <hr />
         <br />
@@ -66,7 +69,11 @@ const SectionOne = () => (
               <h4 style={{color: 'gray!important', fontSize: '1.5rem'}}>More About Me</h4>
               <p>I do graffiti on canvases. There's one from my Instagram to the left. There's a bunch more on my feed. You should check them out. </p>
               <p>
-               I'll admit I haven't uploaded new stuff in a while, but I will get around to it evenetually. If you contact me (and I like you) I'll draw you something :)</p>
+               I'll admit I haven't uploaded new stuff in a while, but I will get around to it eventually. If you contact me (and I like you) I'll draw you something :)</p>
+
+               <p>
+
+               </p>
           </div>
         </div>
       </div>
