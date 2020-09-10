@@ -7,8 +7,8 @@ import Button from 'react-bootstrap/Button'
 //const CalendlyButton = ({ url, prefill, pageSettings, utm }) => {
 //  const onClick = () => openPopupWidget({ url, prefill, pageSettings, utm });
 const CalendlyButton = ({ url }) => {
-    const onClick = () => openPopupWidget({ url:"https://calendly.com/salemaziel" });
-  return <Button onClick={onClick} /*className={calendlystyle.NavBook}*/ className="button" url={url} >Schedule A Cnversation</Button>
+    const onClick = () => openPopupWidget({ url:"https://calendly.com/salemaziel/30-min" });
+  return <Button onClick={onClick} /*className={calendlystyle.NavBook}*/ className="button" url={url} >Schedule A Conversation</Button>
 }
 
 export default CalendlyButton
