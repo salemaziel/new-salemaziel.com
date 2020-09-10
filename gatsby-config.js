@@ -47,20 +47,20 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
+//    {
+//      resolve: `gatsby-plugin-google-analytics`,
+//      options: {
         //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-snipcart',
-      options: {
+//      },
+//    },
+//    {
+//      resolve: 'gatsby-plugin-snipcart',
+//      options: {
         //replace with own Snipcart API key
-        apiKey: 'ZjVkN2M3YzEtOGU0Yy00ZTUzLWFiZGQtNTNkZjY3NGM2YThkNjM3MDg5MjIyODA1Nzg2OTk5',
-        autopop: true,
-          }
-    },
+//        apiKey: 'ZjVkN2M3YzEtOGU0Yy00ZTUzLWFiZGQtNTNkZjY3NGM2YThkNjM3MDg5MjIyODA1Nzg2OTk5',
+//        autopop: true,
+//          }
+//    },
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-react-helmet',
     {

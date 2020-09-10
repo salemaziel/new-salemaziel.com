@@ -39,6 +39,7 @@
     "react": "^16.8.6",
     "react-acrylic": "^0.1.1",
     "react-bootstrap": "^1.0.1",
+    "react-calendly": "^1.1.0",
     "react-dom": "^16.8.6",
     "react-helmet": "6.1.0",
     "react-image-gallery": "^1.0.7",

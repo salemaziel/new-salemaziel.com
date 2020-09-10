@@ -5,6 +5,8 @@ import Container from 'react-bootstrap/Container';
 import { PersonaLightShadow } from '../../../assets/images/index';
 import CodestaffLogo from '../../../assets/images/codestaff-logo.jpg';
 
+import CalendlyButton from '../../CalendlyButton'
+
 class HomeHeader extends React.Component {
   render() {
     return (
@@ -26,10 +28,11 @@ class HomeHeader extends React.Component {
                 Digital Consultant, Web Developer, <br />
                 and System Administrator by night.
               </h3>
-              <h4> HMU, lets talk.</h4>
-              {/* <div style={{padding: '0 0 1rem'}}>
-                          <img src={CodestaffLogo} alt='codestaff-logo' width={150} />
-      </div>*/}
+              <h4> <strong>HMU, lets talk </strong></h4>
+              
+               <div style={{padding: '1rem 0', marginTop: '2rem'}}>
+               <CalendlyButton />
+      </div>
               {/*<icon className="fa fa-code" 
                         style={{
                             fontSize: "2rem",
