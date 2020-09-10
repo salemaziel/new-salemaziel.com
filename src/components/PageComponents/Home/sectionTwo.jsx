@@ -38,7 +38,7 @@ const SectionTwo = () => (
       <div className="row">
         <Col>
           <div className="image fit">
-            <img src={FTPACAB} alt="" />
+            <img src={CodestaffLogo} alt="" />
           </div>
 
           <div className="image fit">
@@ -68,7 +68,7 @@ const SectionTwo = () => (
           </div>
 
           <div className="image fit">
-            <img src={CodestaffLogo} alt="" />
+            <img src={FTPACAB} alt="" />
           </div>
 
           <div className="image fit">
