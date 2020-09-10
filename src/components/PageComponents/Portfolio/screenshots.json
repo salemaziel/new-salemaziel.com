@@ -9,12 +9,12 @@
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1592640947/salemaziel.com/zenithroofingservices_f2f1tm.png"
     },
     {
-    	"id": 1,
-      "name": "White Tigers FC",
-      "desc": "Official team website for White Tigers Futbol Club Southern CA Division 1",
-      "tags": ["Hills", "Nature", "Forest", "Moutains", "Field"],
-      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6678f492911785.5e5768aee812b.png",
-      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594199708/salemaziel.com/white-tigers-thumb_gvz1tc.png"
+      "id": 1,
+      "name": "Spartan Plumbing",
+      "desc": "Single Page Landing Page website for Spartan Plumbing of San Diego, California",
+      "tags": ["Bridge", "River", "City", "Dusk", "Fog"],
+      "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1599730409/salemaziel.com/spartan-plumbing-kontact-link-screenshot_unyv2c.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1599730409/salemaziel.com/spartan-plumbing-kontact-link-screenshot_unyv2c.png"
     },
     {
     	"id": 2,
@@ -64,6 +64,22 @@
       "tags": ["Bridge", "River", "City", "Dusk", "Fog"],
       "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601755/salemaziel.com/eliteCare-full_kwqswq.png",
       "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594601752/salemaziel.com/eliteCare-thumb_csybfl.png"
+    },
+    {
+    	"id": 8,
+      "name": "Dr. John Caravello",
+      "desc": "Personal Portfolio website for Dr. Caravello, Professor of Philosophy at Cal State Channel Islands",
+      "tags": ["Bridge", "River", "City", "Dusk", "Fog"],
+      "src": "https://res.cloudinary.com/dexdumfqy/image/upload/v1599730243/salemaziel.com/john-caravello-website-screenshot_mpujnz.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1599730243/salemaziel.com/john-caravello-website-screenshot_mpujnz.png"
+    },
+    {
+    	"id": 9,
+      "name": "White Tigers FC",
+      "desc": "Official team website for White Tigers Futbol Club Southern CA Division 1",
+      "tags": ["Hills", "Nature", "Forest", "Moutains", "Field"],
+      "src": "https://mir-s3-cdn-cf.behance.net/project_modules/fs/6678f492911785.5e5768aee812b.png",
+      "thumb": "https://res.cloudinary.com/dexdumfqy/image/upload/v1594199708/salemaziel.com/white-tigers-thumb_gvz1tc.png"
     }
   ]
 }
