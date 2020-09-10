@@ -33,6 +33,15 @@ const SectionOne = () => (
         <p>
           I'm Salem Aziel Mackintosh-Benitez.
         </p>
+        <p>
+          I'm Mexican-American. I'm a web developer. I'm a graffiti artist. I'm a Systems Adminstrator in training, and by that I mean I self-host open source services that I dont want to pay for, or that I just want to use for fun. Some of these services include <strong>NextCloud Cloud Storage</strong> for my own cloud storage on my own encrypted drive, <strong>Jellyfin Media Hub</strong> for my own media server to eventually get rid of Hulu, Netflix, HBO, Disney+, etc etc etc... <strong>Mautic Marketing Automation</strong>, software for creating automated email marketing campaigns responsive to customer interations, <strong>HumHub Social Network</strong> for a personal social media network that I'm building, as well as <strong>Mastodon Social Platform</strong> for a similar reason. </p>
+          <p>
+            I use Linux pretty much exclusively, because Microsoft and Apple have both proven themselves to spy on their users, be really expensive (looking at you, Apple), and just generally suck ass in general. I don't run Arch. Atleast not yet for daily use. Too impractical when I have shit to get done, sometimes I don't feel like spending several hours figuring out why the recent update makes my computer boot into a black screen and chrooting into the system from a live USB when I'm just trying to update a client's website, or worse, when I'm trying to watch It's Always Sunny in Philadelphia and relax.
+          </p>
+          <p>
+            If this About Me section seems choppy and disjointed, its because it is. I'll add to it later when I'm feeling more Shakespearean and less humble.
+          </p>
+ 
         <br />
         <hr />
         <br />
@@ -52,13 +61,9 @@ const SectionOne = () => (
           />
           <div style={{margin: '5px 2rem 8rem'}}>
               <h4 style={{color: 'gray!important', fontSize: '1.5rem'}}>More About Me</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-          ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.</p>
+              <p>I do graffiti on canvases. There's one from my Instagram to the left. There's a bunch more on my feed. You should check them out. </p>
+              <p>
+               I'll admit I haven't uploaded new stuff in a while, but I will get around to it evenetually. If you contact me (and I like you) I'll draw you something :)</p>
           </div>
         </div>
       </div>
