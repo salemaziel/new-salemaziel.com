@@ -66,7 +66,7 @@ class Rgallery extends React.Component {
 	}
 	render() {
 		return (
-			<div className="wrapper">
+			<div className="wrapper" style={{width: '100%'}}>
 				{
 					this.state.imageView ? 
 					<ImageView {...this.state.data[this.state.activeID]}
@@ -90,7 +90,8 @@ class ImageView extends React.Component {
 				
 					<Image CSSClass="imageview-image"
 						src={this.props.src}
-						alt={this.props.name} />
+						alt={this.props.name} 
+						style={{width:' 100%'}}/>
 					<div className="imageview-info">
 						<button className="imageview-close" onClick={this.props._closeImageView}>x</button>
 						<h2>{this.props.name}</h2>

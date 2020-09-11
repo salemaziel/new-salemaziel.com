@@ -1,12 +1,10 @@
 import React from 'react';
 
-import Layout from '../components/Layout';
-import PageFooter from '../components/PageFooter';
-import SideBar from '../components/Sidebar/index'
-import Rgallery from '../components/Rgallery'
+import Layout from '../../components/Layout';
+import PageFooter from '../../components/PageFooter';
+import SideBar from '../../components/Sidebar/index'
+import Rgallery from '../../components/Rgallery'
 //import Shoptop from '../assets/images/sdcoast.jpg'
-
-import PortfolioPage from '../components/PageComponents/Portfolio/PortfolioPage'
 
 
 const sections = [
@@ -16,8 +14,9 @@ const sections = [
     { id: 'contact', name: 'Contact', icon: 'fa-envelope' },
   ];
 
-const Portfolio = () => (
+const Webdesign = () => (
     <Layout>
+        <SideBar /*sections={sections}*/ />
         
         <div id="main">
             {/*<section id="shoptop" >
@@ -34,15 +33,15 @@ const Portfolio = () => (
                 </div>
 
                     </section>*/}
-            <PortfolioPage />
-            {/*<section id="mygallery" className="mygallery">
+            <br />
+            <section id="mygallery" className="mygallery">
                 <div className="container">
                     <Rgallery id="rgallery"/>
                 </div>
-                </section>*/}
+            </section>
         </div>
 
     </Layout>
 )
 
-export default Portfolio
+export default Webdesign
