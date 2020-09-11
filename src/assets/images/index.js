@@ -22,5 +22,5 @@ export const UsedToSmoke = require('./used-to-smoke-weed.jpg');
 export const Lakers = require('./lakers.jpg');
 export const Books = require('./books.jpg');
 export const Soccer = require('./soccer.jpg');
-export const MeStripedShirt = require('./me-striped-shirt.jpg');
+export const MeStripedShirt = require('./me-striped-shirt-585x780.jpg');
 export const WhatsUpFoo = require('./whats-up-foo.png');
