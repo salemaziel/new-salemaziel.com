@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/Sidebar/index'
 import Rgallery from '../components/Rgallery'
-import Shoptop from '../assets/images/sdcoast.jpg'
+import Shoptop from '../assets/images/sdcoast-1920x1438.jpg'
 
 import { Link } from 'gatsby'
 import { graphql } from "gatsby"

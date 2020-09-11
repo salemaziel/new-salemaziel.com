@@ -1,6 +1,6 @@
  
 export const Profilepic = require('./profilepic.png');
-export const Sdcoast = require('./sdcoast.jpg');
+export const Sdcoast = require('./sdcoast-1920x1438.jpg');
 export const Persona = require('./persona.png');
 export const PersonaLightShadow = require('./persona-lightshadow.png');
 export const BeachBg = require('./beachbg.jpg');
