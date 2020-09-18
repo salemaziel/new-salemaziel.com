@@ -15,6 +15,8 @@ import {Link} from 'gatsby'
 
 import Col from 'react-bootstrap/Col'
 
+import aboutStyles from './about.module.css'
+
 const SectionOne = () => (
 
       <section id="about" className="three">
@@ -51,7 +53,7 @@ const SectionOne = () => (
         <br />
         <hr />
         <br />
-        <div className="MoreAbout">
+        <div className={aboutStyles.MoreAbout}>
           <InstagramEmbed
             url="https://www.instagram.com/p/244wrIhZ-5/"
             maxWidth={320}

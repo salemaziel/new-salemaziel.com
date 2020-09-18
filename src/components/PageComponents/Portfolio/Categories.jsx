@@ -20,7 +20,7 @@ const Categories = (props) => {
           </div>
           </Col>
           <Col xs={12} lg={6}>
-          <div className="gallery-tile mb-3 mt-3" onClick={()=>navigateTo("/portfolio/webdesign") }>
+          <div className="gallery-tile mb-3 mt-3" onClick={()=>navigateTo("/portfolio/server-installs") }>
             <div className="portfolio-info">
               <h2>Server Installation</h2>
               {/*<p>{this.props.desc}</p>*/}
@@ -31,7 +31,7 @@ const Categories = (props) => {
         </Row>
         <Row className="justify-content-md-center">  
             <Col xs={12} lg={6}>
-          <div className="gallery-tile mb-3 mt-3" onClick={()=>navigateTo("/portfolio/webdesign") }>
+          <div className="gallery-tile mb-3 mt-3" onClick={()=>navigateTo("/portfolio/workflow-automation") }>
             <div className="portfolio-info">
               <h2>Workflow Automation</h2>
               {/*<p>{this.props.desc}</p>*/}
@@ -40,7 +40,7 @@ const Categories = (props) => {
           </div>
           </Col>
           <Col xs={12} lg={6}>
-          <div className="gallery-tile mb-3 mt-3" onClick={()=>navigateTo("/portfolio/webdesign") }>
+          <div className="gallery-tile mb-3 mt-3" onClick={()=>navigateTo("/portfolio/computer-repair") }>
             <div className="portfolio-info">
               <h2>Computer Troubleshoot &amp; Repair </h2>
               {/*<p>{this.props.desc}</p>*/}

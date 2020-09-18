@@ -9,7 +9,8 @@ module.exports = {
   manifestIcon: 'src/assets/img/persona-lightshadow.png',
   //pathPrefix: `/content/shop`, // This path is subpath of your hosting https://domain/portfolio
   pathPrefix: `/content/shop`,
-  authorName: 'Salem Aziel',
+  authorName: `Salem Aziel`,
+  author: `salemaziel`,
   heading: 'Web Coach / Web Development',
   // social
   socialLinks: [

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+/*
 import PageFooter from '../components/PageFooter';
 import SideBar from '../components/Sidebar/index'
 
@@ -13,11 +14,10 @@ import pic7 from '../assets/images/pic07.jpg';
 import pic8 from '../assets/images/pic08.jpg';
 import Scroll from '../components/Scroll';
 
-import { Button } from 'reactstrap'
 import ScrollToTop from 'react-router-scroll-top'
 
 //import HomeHeader from '../components/HomeHeader'
-import { Link } from 'gatsby';
+import { Link } from 'gatsby';*/
 import HomePage from '../components/PageComponents/Home/Page'
 //import Rgallery from '../components/Rgallery'
 //import { Link } from 'gatsby'

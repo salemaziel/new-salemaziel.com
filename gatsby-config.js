@@ -4,13 +4,38 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
+    author: config.author
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
+    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-sass',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/content`,
         name: `content`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/blogassets`,
+        name: `blogassets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/pages`,
+        name: "pages",
       },
     },
     {
@@ -31,6 +56,8 @@ module.exports = {
         //purgeOnly : ['bootstrap/'], // Purge only these files/folders
       //}
     //},
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -42,11 +69,10 @@ module.exports = {
             },
           },
           `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
 //    {
 //      resolve: `gatsby-plugin-google-analytics`,
 //      options: {
@@ -61,8 +87,6 @@ module.exports = {
 //        autopop: true,
 //          }
 //    },
-    `gatsby-plugin-styled-components`,
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -75,7 +99,6 @@ module.exports = {
         icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
 };

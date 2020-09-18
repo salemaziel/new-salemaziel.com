@@ -6,7 +6,7 @@ import { StaticQuery, graphql } from 'gatsby';
 import SideBar from './Sidebar/index';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { theme } from '../styles/theme';
-import '../css/nosnipfooter.css';
+//import '../css/nosnipfooter.css';
 //import '../assets/sass/main.scss';
 import PageFooter from './PageFooter';
 import '../css/main.css'

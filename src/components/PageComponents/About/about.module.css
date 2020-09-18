@@ -1,4 +1,4 @@
-div.MoreAbout {
+.MoreAbout {
     display: flex;
     align-content: center;
     align-items: center;
@@ -8,12 +8,7 @@ div.MoreAbout {
 }
 
 @media screen and (max-width: 768px) {
-    div.MoreAbout {
-        display: flex;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
+    .MoreAbout {
         flex-wrap: wrap;
-        margin: auto;
     }
 }
