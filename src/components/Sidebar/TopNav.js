@@ -1,4 +1,7 @@
 import React from 'react';
+import {
+  MdMenu
+} from 'react-icons/md'
 
 export default function TopNav({ title, onMenuClick = () => {} }) {
   return (
@@ -11,6 +14,7 @@ export default function TopNav({ title, onMenuClick = () => {} }) {
           onMenuClick();
         }}
       >
+        <MdMenu />
         {' '}
       </a>
     </div>

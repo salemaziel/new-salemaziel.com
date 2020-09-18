@@ -1,5 +1,5 @@
 module.exports = {
-  siteTitle: "Salem Aziel's Personal and Portfolio", // <title>
+  siteTitle: "Salem Aziel's Personal Blog and Portfolio", // <title>
   manifestName: "Salem Aziel",
   manifestShortName: "Salem Aziel", // max 12 characters
   manifestStartUrl: '/',
@@ -11,7 +11,7 @@ module.exports = {
   pathPrefix: `/content/shop`,
   authorName: `Salem Aziel`,
   author: `salemaziel`,
-  heading: 'Web Coach / Web Development',
+  heading: 'Web Developer, Digital Consultant, SysAdmin',
   // social
   socialLinks: [
     {

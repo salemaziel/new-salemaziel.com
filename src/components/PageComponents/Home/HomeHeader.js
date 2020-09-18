@@ -6,10 +6,24 @@ import { PersonaLightShadow } from '../../../assets/images/index';
 import CodestaffLogo from '../../../assets/images/codestaff-logo.jpg';
 
 import CalendlyButton from '../../CalendlyButton'
+import Announcement from '../../Announcement'
+import {navigateTo} from 'gatsby'
+
 
 class HomeHeader extends React.Component {
   render() {
     return (
+      <>
+                    <Announcement
+        variant="white"
+        text="Sorry, currently redesigning my site. Find out more"
+        linkText="here"
+        /*linkOnClick={() => {
+          // Navigate to pricing page
+          //navigateTo("/about");
+          <a href="https://youtu.be/dQw4w9WgXcQ" rel="nofollow" />
+        }}*/
+      />
       <section id="top" className="one dark cover">
         {/*<div className="container">*/}
         <Container>
@@ -47,6 +61,7 @@ class HomeHeader extends React.Component {
           {/*</div>*/}
         </Container>
       </section>
+      </>
     );
   }
 }

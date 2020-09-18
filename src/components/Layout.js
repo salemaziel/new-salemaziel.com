@@ -11,6 +11,8 @@ import { theme } from '../styles/theme';
 import PageFooter from './PageFooter';
 import '../css/main.css'
 import './layout.css'
+import {navigateTo} from 'gatsby'
+
 
 class Layout extends Component {
   constructor(props) {
