@@ -5,6 +5,13 @@ import { Link } from 'gatsby'
 
 import './sidebar.css'
 
+import {
+  FaHome,
+  FaUser,
+  FaPhotoVideo,
+  FaEnvelope
+} from 'react-icons/fa'
+
 
 export default function Nav({ sections = [] }) {
   return (
@@ -12,7 +19,7 @@ export default function Nav({ sections = [] }) {
       <ul>
         <li>
         <Link to="/" className="NavItems">
-        <span className="icon fa-home" />
+        <FaHome className="mr-5"/>
           Home
         </Link>
         </li>
@@ -27,7 +34,7 @@ export default function Nav({ sections = [] }) {
 
         <li>
         <Link to="/about" className="NavItems">
-        <span className="icon fa-user" />
+        <FaUser className="mr-5"/>
           About Me
         </Link>
         </li>
@@ -41,13 +48,13 @@ export default function Nav({ sections = [] }) {
 
         <li>
         <Link to="/portfolio" className="NavItems">
-          <span className="icon fa-photo" />
+          <FaPhotoVideo className="mr-5"/>
           Portfolio
         </Link>
         </li>
         <li>
         <Link to="/contact" className="NavItems">
-        <span className="icon fa-envelope" />
+        <FaEnvelope className="mr-5"/>
           Contact
         </Link>
         </li>

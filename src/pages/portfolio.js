@@ -20,26 +20,9 @@ const Portfolio = () => (
     <Layout>
         
         <div id="main">
-            {/*<section id="shoptop" >
-                <div className="container">
-                    <div style={{
-                        maxWidth: "100%",
-                        margin: "1rem 2rem"
-                    }} >
-                        <img src={Shoptop} 
-                        style={{
-                            width: "100%",
-                        }}/>
-                    </div>
-                </div>
 
-                    </section>*/}
             <PortfolioPage />
-            {/*<section id="mygallery" className="mygallery">
-                <div className="container">
-                    <Rgallery id="rgallery"/>
-                </div>
-                </section>*/}
+
         </div>
 
     </Layout>

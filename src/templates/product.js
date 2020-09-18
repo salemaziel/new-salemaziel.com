@@ -1,5 +1,5 @@
 // This is the template for each programmatically generated item in the shop. It will be populated with data from markdown files in the content folder.
-
+/*
 import React from "react";
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
@@ -108,7 +108,7 @@ class Product extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
  
-    <SideBar /*sections={sections}*/>
+    <SideBar /*sections={sections}* />
     </SideBar>
     
     <div id="main">
@@ -128,7 +128,7 @@ class Product extends React.Component {
           onChange={(e) => this.setSelected(e.target.value)}
           value={this.state.selected}>
           {product.frontmatter.customField.values.map((option) => (<DropdownOption key={option.name}>{option.name}</DropdownOption>))}
-           <span><FontAwesomeIcon icon={faAngleDown} style={{ /*margin: '2rem 0 0 -2rem',*/color: 'white' }} /></span>
+           <span><FontAwesomeIcon icon={faAngleDown} style={{ /*margin: '2rem 0 0 -2rem',* /color: 'white' }} /></span>
         </Dropdown>
         <FontAwesomeIcon icon={faAngleDown} style={{ margin: '2rem 0 0 -2rem',color: 'white' }} />
         
@@ -197,3 +197,4 @@ export const pageQuery = graphql`
     }
   }
 `
+*/

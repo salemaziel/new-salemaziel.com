@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 
 import Layout from '../components/Layout';
 import PageFooter from '../components/PageFooter';
@@ -37,7 +37,7 @@ const sections = [
       return (
         <Layout location={this.props.location} title={siteTitle}>
 
-        <SideBar /*sections={sections}*/ />
+        <SideBar /*sections={sections}* / />
         <div id="main">
             
             <section id="shoptop">
@@ -57,7 +57,7 @@ const sections = [
                         })}
                 </ThumbnailsWrapper>
                     <div>
-                       {/*} <img src={Shoptop} />*/}
+                       {/*} <img src={Shoptop} />* /}
                     </div>
                 </div>
 
@@ -66,7 +66,7 @@ const sections = [
                 <div className="container">
                     <Rgallery id="rgallery"/>
                 </div>
-                    </section>*/}
+                    </section>* /}
         </div>
 
 
@@ -107,3 +107,4 @@ query {
   }
 }
 `
+*/

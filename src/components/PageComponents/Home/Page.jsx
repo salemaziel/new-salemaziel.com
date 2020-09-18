@@ -9,7 +9,7 @@ const HomePage = () => (
     <div id="main">
 
           <HomeHeader />
-          <SectionTwo />
+          {/*<SectionTwo />*/}
           <SectionThree />
 
 

@@ -23,12 +23,11 @@ class HomeHeader extends React.Component {
                 />
               </div>
               <h3 className="alt" style={{ textShadow: '3px 3px 4px black' }}>
-                <a href="https://twitter.com/realDonaldTrump/status/827483841589891073?">Professional Anarchist &#8482;</a> by day. <br />
+              Digital Consultant, Web Developer, <br />
+                and System Administrator 
                 <br />
-                Digital Consultant, Web Developer, <br />
-                and System Administrator by night.
               </h3>
-              <h4> <strong>HMU, lets talk </strong></h4>
+              {/*<h4> <strong>HMU, lets talk </strong></h4>*/}
               
                <div style={{padding: '1rem 0', marginTop: '2rem'}}>
                <CalendlyButton />

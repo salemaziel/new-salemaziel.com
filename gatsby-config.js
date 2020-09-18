@@ -4,6 +4,7 @@ module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
     title: config.siteTitle,
+    author: config.author
   },
   plugins: [
     `gatsby-plugin-styled-components`,

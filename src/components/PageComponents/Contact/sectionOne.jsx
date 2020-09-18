@@ -1,8 +1,19 @@
 import React from 'react'
 
 import ContactForm from './contactForm'
-import Footer from '../../Sidebar/Footer'
-import config from '../../../../config'
+//import Footer from '../../Sidebar/Footer'
+//import config from '../../../../config'
+
+import {
+  FaFacebook,
+  FaInstagram,
+  FaTwitter
+} from 'react-icons/fa'
+
+
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+
 
 const SectionOne = () => (
     <section id="contact" className="four">
@@ -33,9 +44,16 @@ const SectionOne = () => (
 </form>*/}
         <ContactForm />
         </div>
-        <div style={{ justifyContent: 'center', alignContent: 'center', textAlign: 'center', margin: '3rem 0 0 0'}}>
+        {/*<div style={{ justifyContent: 'center', alignContent: 'center', textAlign: 'center', margin: '3rem 0 0 0'}}>
         <Footer socialLinks={config.socialLinks} style={{margin: '0!important', padding: '0!important'}}/>
-        </div>
+</div>*/}
+        <Row>
+          <Col>
+              <FaFacebook />
+              <FaInstagram />
+              <FaTwitter />
+          </Col>
+        </Row>
       </section>
 
 

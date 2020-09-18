@@ -17,7 +17,7 @@ const SectionThree = () => (
 <section id="about" className="three">
         <div className="container">
           <header>
-            <h2>This is Literally Me</h2>
+            <h2>This is Me</h2>
           </header>
 
           <a href="/#" className="image featured">
