@@ -108,7 +108,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
+        authorName
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

@@ -16,7 +16,7 @@ const Bio = () => {
       }
       site {
         siteMetadata {
-          author
+          authorName
         }
       }
     }
