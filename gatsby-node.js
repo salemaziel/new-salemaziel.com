@@ -45,9 +45,9 @@ exports.createPages = ({ graphql, actions }) => {
       throw result.errors
     }
 */
-    const blogPost = path.resolve(`./src/templates/blog-post.js`)
-//    const result = await graphql(
-  return graphql(
+  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+    const result = await graphql(
+//  return graphql(
 
       `
         {
