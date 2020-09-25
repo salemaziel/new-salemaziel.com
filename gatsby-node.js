@@ -5,7 +5,7 @@
  */
 
 // You can delete this file if you're not using it
-
+/*
 const path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
@@ -44,7 +44,7 @@ exports.createPages = ({ graphql, actions }) => {
     if (result.errors) {
       throw result.errors
     }
-*/
+* /
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 //    const result = await graphql(
   return graphql(
@@ -183,3 +183,4 @@ exports.createSchemaCustomization = ({ actions }) => {
     }
   `)
 }
+*/
