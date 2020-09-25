@@ -32,6 +32,13 @@ module.exports = {
       },
     },
     {
+        resolve: `gatsby-source-filesystem`,
+        options: {
+          path: `${__dirname}/content/blogassets`,
+          name: `blogassets`,
+        },
+      },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/src/pages`,
@@ -73,6 +80,7 @@ module.exports = {
         ],
       },
     },
+    `gatsby-plugin-feed`,
 //    {
 //      resolve: `gatsby-plugin-google-analytics`,
 //      options: {
