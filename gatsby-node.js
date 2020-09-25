@@ -46,8 +46,8 @@ exports.createPages = ({ graphql, actions }) => {
     }
 */
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
-    const result = await graphql(
-//  return graphql(
+//    const result = await graphql(
+  return graphql(
 
       `
         {
