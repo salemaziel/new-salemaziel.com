@@ -1,7 +1,7 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import SideBar from '../components/Sidebar/index'
-import AutomationResearchPage from '../components/PageComponents/Contact/Automation/Page.jsx'
+import Layout from '../../components/Layout';
+import SideBar from '../../components/Sidebar/index'
+import AutomationResearchPage from '../../components/PageComponents/Contact/Automation/Page.jsx'
 
 //import Rgallery from '../components/Rgallery'
 //import { Link } from 'gatsby'

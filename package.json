@@ -41,6 +41,7 @@
     "gatsby-transformer-remark": "2.8.35",
     "gatsby-transformer-sharp": "2.5.15",
     "node-sass": "^4.12.0",
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-acrylic": "^0.1.1",
     "react-bootstrap": "1.3.0",

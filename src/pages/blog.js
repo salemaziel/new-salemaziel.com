@@ -2,64 +2,51 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
-import Layout from "../components/Layout"
-import SEO from "../components/seoNew"
+import Layout2 from "../components/BlogLayout"
+//import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
-  const posts = data.allMarkdownRemark.nodes
+import { Helmet } from 'react-helmet';
 
-  if (posts.length === 0) {
+
+
+class Blog extends React.Component {
+  render() {
+    const { data } = this.props
+    const siteTitle = data.site.siteMetadata.title
+    const posts = data.allMarkdownRemark.edges
+
     return (
-      <Layout location={location} title={siteTitle}>
-        <SEO title="All posts" />
+      <Layout2 location={this.props.location} title={siteTitle}>
+         <Helmet title={'Blog Page'} />
         <Bio />
-        <p>
-          No blog posts found. Add markdown posts to "content/blog" (or the
-          directory you specified for the "gatsby-source-filesystem" plugin in
-          gatsby-config.js).
-        </p>
-      </Layout>
-    )
-  }
-
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      {posts.map(post => {
-        const title = post.frontmatter.title || post.fields.slug
-        return (
-          <article
-            key={post.fields.slug}
-            className="post-list-item"
-            itemScope
-            itemType="http://schema.org/Article"
-          >
-            <header>
-              <h2>
-                <Link to={post.fields.slug} itemProp="url">
-                  <span itemProp="headline">{title}</span>
+        {posts.map(({ node }) => {
+          const title = node.frontmatter.title || node.fields.slug
+          return (
+            <div key={node.fields.slug}>
+              <h3
+                style={{
+                  /*marginBottom: rhythm(1 / 4),*/
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+                  {title}
                 </Link>
-              </h2>
-              <small>{post.frontmatter.date}</small>
-            </header>
-            <section>
+              </h3>
+              <small>{node.frontmatter.date}</small>
               <p
                 dangerouslySetInnerHTML={{
-                  __html: post.frontmatter.description || post.excerpt,
+                  __html: node.frontmatter.description || node.excerpt,
                 }}
-                itemProp="description"
               />
-            </section>
-          </article>
-        )
-      })}
-    </Layout>
-  )
+            </div>
+          )
+        })}
+      </Layout2>
+    )
+  }
 }
 
-export default BlogIndex
+export default Blog
 
 export const pageQuery = graphql`
   query {
@@ -69,15 +56,17 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
         }
       }
     }

@@ -12,7 +12,9 @@ module.exports = {
   authorName: `Salem Aziel`,
   author: `salemaziel`,
   heading: 'Web Developer, Digital Consultant, SysAdmin',
-  // social
+  social: {
+    twitter: '@salem_amb760',
+  },
   socialLinks: [
     {
       icon: 'fa-instagram',
