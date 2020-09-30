@@ -1,8 +1,19 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: static/images
+  commit_messages:
+    create: 'Create {{collection}} “{{slug}}”'
+    update: 'Update {{collection}} “{{slug}}”'
+    delete: 'Delete {{collection}} “{{slug}}”'
+    uploadMedia: '[skip ci] Upload “{{path}}”'
+    deleteMedia: '[skip ci] Delete “{{path}}”'
+
+# Uncomment local_backend when you need to develop in your local
+#local_backend: true # run npx netlify-cms-proxy-server for local testing
+
+media_folder: src/assets/images
 public_folder: /images
+
 collections:
   - name: config
     label: Config
@@ -16,70 +27,55 @@ collections:
             label: Title
             required: false
           - widget: string
+            name: titleTemplate
+            label: Title Template
+            default: "%s"
+            required: true
+          - widget: string
             name: author
             label: Author
             required: false
           - widget: string
             name: description
             label: Description
+            default: ''
             required: false
           - widget: string
             name: siteUrl
             label: Site URL
             required: false
-          - widget: string
-            name: twitter
-            label: Twitter
-            required: false
-            fields:
 
-  - name: blog
-    label: Blogs
-    folder: content/blog
-    create: true
-    extension: md
-    slug: '{{slug}}'
-    fields:
-      - widget: string
-        name: title
-        label: Title
-        required: true
-      - widget: date
-        name: date
-        label: Date
-        required: true
-      - widget: string
-        name: description
-        label: Description
-        required: false
-      - widget: markdown
-        name: body
-        label: Content
-        required: false
-        hint: Page content
+
+  - name: 'posts' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Posts' # Used in the UI
+    label_singular: 'Post' # Used in the UI, ie: "New Post"
+    description: >
+      Create awesome content here.
+    folder: 'src/content/posts'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    summary: '{{title}} — {{year}}/{{month}}/{{day}}'
+    create: true # Allow users to create new documents in this collection
+    fields: # The fields each document in this collection have
+      - { label: 'Template', name: 'template', widget: 'hidden', default: 'blog-post'}
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Slug', name: 'slug', widget: 'string', hint: 'Start slug with /. Use only alphanumeric characters, - and _. Avoid spaces in any cases.'}
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          dateFormat: 'YYYY-MM-DD',
+          timeFormat: 'HH:mm',
+          format: 'YYYY-MM-DD HH:mm',
+        }
+      - { label: 'SEO Description', name: 'description', widget: 'text' }
+      - {
+          label: 'Featured Image',
+          name: 'featuredImage',
+          widget: 'image',
+          required: false,
+          tagname: ''
+        }
+
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
         
-  - name: shop
-    label: Shop
-    folder: content/shop/products
-    create: true
-    extension: md
-    slug: '{{slug}}'
-    fields:
-      - widget: string
-        name: title
-        label: Title
-        required: true
-      - widget: date
-        name: date
-        label: Date
-        required: true
-      - widget: string
-        name: description
-        label: Description
-        required: false
-      - widget: markdown
-        name: body
-        label: Content
-        required: false
-        hint: Page content
 

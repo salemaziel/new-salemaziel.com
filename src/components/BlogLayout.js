@@ -5,12 +5,18 @@ import SideBar from './Sidebar/index';
 
 
 class Layout2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isPreloaded: true,
+    };
+  }
   render() {
     const { location, title, children } = this.props
     const { isPreloaded } = this.state;
-    const rootPath = `${__PATH_PREFIX__}/`
+//    const rootPath = `${__PATH_PREFIX__}/`
 
-    if (location.pathname === rootPath) {
+//    if (location.pathname === rootPath) {
       {/**header = (
         <h1
           style={{
@@ -32,14 +38,15 @@ class Layout2 extends React.Component {
         </h1>
       )
     } else {**/}
-  }
+//  }
     
     return (
       <>
       <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
               <SideBar /*sections={sections}*/ />
-
+              <div id="main">
               {children}
+              </div>
             </div>
       </>
     )

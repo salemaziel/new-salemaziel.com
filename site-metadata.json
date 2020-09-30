@@ -1,6 +1,7 @@
 {
     "title": "Personal Blog and Portfolio for Salem Aziel",
-    "author": "Salem Aziel",
+    "titleTemplate": "%s",
+    "author": "SalemAziel",
     "description": "Personal Blog and Portfolio for Salem Aziel",
     "siteUrl": "https://salemaziel.com",
     "lang": "en",

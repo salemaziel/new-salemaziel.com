@@ -191,7 +191,7 @@ const { createFilePath } = require(`gatsby-source-filesystem`)
 exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPosts = path.resolve(`./src/templates/blog-post.js`)
   const result = await graphql(
     `
       {
@@ -201,10 +201,10 @@ exports.createPages = async ({ graphql, actions }) => {
         ) {
           edges {
             node {
-              fields {
-                slug
-              }
+              id
               frontmatter {
+                slug
+                template
                 title
               }
             }
@@ -215,36 +215,62 @@ exports.createPages = async ({ graphql, actions }) => {
   )
 
   if (result.errors) {
-    throw result.errors
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
   }
 
   // Create blog posts pages.
   const posts = result.data.allMarkdownRemark.edges
+  let blogPostsCount = 0
 
   posts.forEach((post, index) => {
     const previous = index === posts.length - 1 ? null : posts[index + 1].node
     const next = index === 0 ? null : posts[index - 1].node
 
     createPage({
-      path: post.node.fields.slug,
-      component: blogPost,
+      path: post.node.frontmatter.slug,
+      component: path.resolve(`src/templates/${String(post.node.frontmatter.template)}.js`),
       context: {
-        slug: post.node.fields.slug,
+        id,
         previous,
         next,
       },
     })
+
+    // Count blog posts.
+    if (post.node.frontmatter.template === 'blog-post') {
+      blogPostsCount++
+    }
   })
+
+  // Create blog-list pages
+  const postsPerPage = 9
+  const numPages = Math.ceil(blogPostsCount / postsPerPage)
+
+  Array.from({ length: numPages }).forEach((_, i) => {
+    createPage({
+      path: i === 0 ? `/blog` : `/blog/${i + 1}`,
+      component: blogList,
+      context: {
+        limit: postsPerPage,
+        skip: i * postsPerPage,
+        numPages,
+        currentPage: i + 1,
+      },
+    })
+  })
+
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+
+exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
 
   if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
+    const value = createFilePath({ node, getNode, basePath: `pages` })
     createNodeField({
-      name: `slug`,
       node,
+      name: `slug`,
       value,
     })
   }

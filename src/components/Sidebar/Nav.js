@@ -9,7 +9,8 @@ import {
   FaHome,
   FaUser,
   FaPhotoVideo,
-  FaEnvelope
+  FaEnvelope,
+  FaBookOpen
 } from 'react-icons/fa'
 
 
@@ -39,12 +40,12 @@ export default function Nav({ sections = [] }) {
         </Link>
         </li>
 
-        {/*<li >
-        <Link to="/services" className="NavItems">
-          <span className="icon fa-code " />
-          Services
+        <li >
+        <Link to="/blog" className="NavItems">
+          <FaBookOpen className="mr-5" />
+          Blog
         </Link>
-        </li>*/}
+        </li>
 
         <li>
         <Link to="/portfolio" className="NavItems">

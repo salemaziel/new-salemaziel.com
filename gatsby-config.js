@@ -1,5 +1,15 @@
 const config = require('./config');
 
+const netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  },
+}
+
+
+
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -34,6 +44,7 @@ module.exports = {
         name: "pages",
       },
     },
+    `gatsby-plugin-netlify-cms`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -58,6 +69,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          netlifyCmsPaths,
           {
             resolve: `gatsby-remark-images`,
             options: {
@@ -69,7 +81,6 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-feed`,
 //    {
 //      resolve: `gatsby-plugin-google-analytics`,
 //      options: {

@@ -1,113 +1,108 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
+import { RiArrowRightLine, RiArrowLeftLine } from "react-icons/ri"
 
-import Bio from "../components/bio"
-import Layout from "../components/Layout"
-import SEO from "../components/seoNew"
+import Layout from "../components/layout"
+import SEO from '../components/seo';
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
-
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
-        <div className='container' style={{
-              position: 'relative',
-              background: 'rgba(15, 17, 21, 0.45)',
-              padding: '0 3em',
-              border: '1px #000000',
-              borderRadius: '15px',
-             
-        }}>
-        <div style={{
-                lineHeight: '2em',
-                fontSize: '3em',
-                position: 'relative',
-                textAlign: 'center',
-                margin: '2em 0',
-        }}>
-          <hr />
-        </div>
-        <h1
-          style={{
-            marginTop: '2rem',
-            marginBottom: 0,
-            color: 'orange',
-          }}
-        >
-          {post.frontmatter.title}
-        </h1>
-        <p
-          style={{
-            margin: '2rem auto 2rem',
-            display: `block`,
-            color: 'white',
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div style={{color: 'white'}} dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: '1rem'
-          }}
-        />
-        <Bio />
-
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
+const Pagination = (props) => (
+  <div className="pagination -post">
+    <ul>
+        {(props.previous && props.previous.frontmatter.template === 'blog-post') && (
           <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={props.previous.frontmatter.slug} rel="prev">
+                <p><span className="icon -left"><RiArrowLeftLine/></span> Previous</p>
+                <span className="page-title">{props.previous.frontmatter.title}</span>
               </Link>
-            )}
           </li>
+        )}
+        {(props.next && props.next.frontmatter.template === 'blog-post') && (
           <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
+            <Link to={props.next.frontmatter.slug} rel="next">
+              <p>Next <span className="icon -right"><RiArrowRightLine/></span></p>
+              <span className="page-title">{props.next.frontmatter.title}</span>
+            </Link>
           </li>
-        </ul>
-        </div>
-      </Layout>
-    )
+        )}
+    </ul>
+  </div>
+)
+
+const Post = ({ data, pageContext }) => {
+  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { frontmatter, html, excerpt } = markdownRemark
+  const Image = frontmatter.featuredImage ? frontmatter.featuredImage.childImageSharp.fluid : ""
+  const { previous, next } = pageContext
+
+  let props = {
+    previous,
+    next
   }
+
+  return (
+    <Layout className="page">
+      <SEO
+        title={frontmatter.title}
+        description={frontmatter.description ? frontmatter.description : excerpt}
+        image={Image}
+        article={true}
+      />
+      <article className="blog-post">
+        <header className="featured-banner">
+          <section className="article-header">
+            <h1>{frontmatter.title}</h1>
+            <time>{frontmatter.date}</time>
+          </section>
+          {Image ? (
+            <Img 
+              fluid={Image} 
+              objectFit="cover"
+              objectPosition="50% 50%"
+              alt={frontmatter.title + ' - Featured image'}
+              className="featured-image"
+            />
+          ) : ""}
+        </header>
+        
+        <div
+          className="blog-post-content"
+          dangerouslySetInnerHTML={{ __html: html }}
+        />
+      </article>
+      {(previous || next) && (
+        <Pagination {...props} />
+      )}
+    </Layout>
+  )
 }
 
-export default BlogPostTemplate
+export default Post
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
-    }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostQuery($id: String!) {
+    markdownRemark( 
+      id: { eq: $id }
+    ) {
       id
-      excerpt(pruneLength: 160)
       html
+      excerpt(pruneLength: 148)
       frontmatter {
-        title
         date(formatString: "MMMM DD, YYYY")
+        slug
+        title
         description
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 1980, maxHeight: 768, quality: 80, srcSetBreakpoints: [350, 700, 1050, 1400]) {
+              ...GatsbyImageSharpFluid
+              ...GatsbyImageSharpFluidLimitPresentationSize
+            }
+            sizes {
+              src
+            }
+          }
+        }
       }
     }
   }
