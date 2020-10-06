@@ -6,6 +6,8 @@ import SideBar from '../../components/Sidebar/index'
 import Rgallery from '../../components/Rgallery'
 //import Shoptop from '../assets/images/sdcoast.jpg'
 
+import WebDevPage from '../../components/PageComponents/Portfolio/WebDev/Page'
+
 
 const sections = [
     { id: 'shoptop', name: 'Featured', icon: 'fa-home' },
@@ -18,28 +20,7 @@ const Webdesign = () => (
     <Layout>
         <SideBar /*sections={sections}*/ />
         
-        <div id="main">
-            {/*<section id="shoptop" >
-                <div className="container">
-                    <div style={{
-                        maxWidth: "100%",
-                        margin: "1rem 2rem"
-                    }} >
-                        <img src={Shoptop} 
-                        style={{
-                            width: "100%",
-                        }}/>
-                    </div>
-                </div>
-
-                    </section>*/}
-            <br />
-            <section id="mygallery" className="mygallery">
-                <div className="container">
-                    <Rgallery id="rgallery"/>
-                </div>
-            </section>
-        </div>
+    <WebDevPage />
 
     </Layout>
 )
