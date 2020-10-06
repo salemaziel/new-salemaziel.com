@@ -11,7 +11,9 @@ import Announcement from '../../Announcement'
 
 const AboutPage = () => (
   <>
-                      <Announcement
+
+    <div id="main">
+    <Announcement
         variant="white"
         text="Sorry, currently redesigning my site. Find out more"
         linkText="here"
@@ -21,7 +23,6 @@ const AboutPage = () => (
           <a href="https://youtu.be/dQw4w9WgXcQ" rel="nofollow" />
         }}*/
       />
-    <div id="main">
           <SectionOne />
           <WhoAmPics />
 

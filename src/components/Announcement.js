@@ -9,7 +9,7 @@ function Announcement(props) {
       {` `}
 
       
-        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" rel="noreferrer nofollow" target="_blank" > {props.linkText}</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" rel="noreferrer nofollow" target="_blank" ><strong> {props.linkText} </strong></a>
       
     </Alert>
   );

@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Layout from '../../components/Layout';
-import PageFooter from '../../components/PageFooter';
+//import PageFooter from '../../components/PageFooter';
 import SideBar from '../../components/Sidebar/index'
 //import Shoptop from '../assets/images/sdcoast.jpg'
-
+import CompRepairPage from '../../components/PageComponents/Portfolio/CompRepair/Page'
 
 const sections = [
     { id: 'shoptop', name: 'Featured', icon: 'fa-home' },
@@ -17,24 +17,9 @@ const CompRepair = () => (
     <Layout>
         <SideBar /*sections={sections}*/ />
         
-        <div id="main">
-            {/*<section id="shoptop" >
-                <div className="container">
-                    <div style={{
-                        maxWidth: "100%",
-                        margin: "1rem 2rem"
-                    }} >
-                        <img src={Shoptop} 
-                        style={{
-                            width: "100%",
-                        }}/>
-                    </div>
-                </div>
 
-                    </section>*/}
-            <br />
+            <CompRepairPage/>
 
-        </div>
 
     </Layout>
 )

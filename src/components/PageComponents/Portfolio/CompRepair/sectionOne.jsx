@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ContactForm from './contactForm'
+import CompRepairForm from './compRepairForm'
 //import Footer from '../../Sidebar/Footer'
 //import config from '../../../../config'
 
@@ -19,7 +19,7 @@ const SectionOne = () => (
     <section id="contact" className="four">
     <div className="container">
       <header>
-        <h2>Get In Touch</h2>
+        <h2>What's Wrong With Your Computer?</h2>
       </header>
 
       {/*<form method="post" action="#">
@@ -42,7 +42,7 @@ const SectionOne = () => (
               </div>
               </Row>
 </form>*/}
-        <ContactForm />
+        <CompRepairForm />
         </div>
         {/*<div style={{ justifyContent: 'center', alignContent: 'center', textAlign: 'center', margin: '3rem 0 0 0'}}>
         <Footer socialLinks={config.socialLinks} style={{margin: '0!important', padding: '0!important'}}/>

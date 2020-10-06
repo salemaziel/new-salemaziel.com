@@ -41,12 +41,16 @@ const SectionOne = () => (
           <p>
             I also run Linux on my daily work laptop, because Microsoft and Apple have both proven themselves to spy on their users, be really expensive (looking at you, Apple), and just generally suck ass in general. My specialty is Debian-based systems.. Ubuntu, Raspbian, Debian, Kali, Parrot, MX Linux, and so on, with some experience using CentOS, Fedora, OpenSuse, and Arch Linux.</p>
             <p>
-              No, I don't run Arch. Atleast not yet for daily use. Too impractical when I have shit to get done, sometimes I don't want to spend hours figuring out why the last update makes my computer boot up into a black screen, mounting and chrooting into the system from a live USB to fix it when I'm just trying to fix a typo on a client's website, or worse, when I'm trying to watch It's Always Sunny and chill. <br />I'll admit Arch is pretty fun though, even if in the absolute nerdiest and uninteresting-to-most-women way possible.
+              No, I don't run Arch. Atleast not yet for daily use. Too impractical when I have shit to get done, sometimes I don't want to spend hours figuring out why the last update makes my computer boot up into a black screen, mounting and chrooting into the system from a live USB to fix it when I'm just trying to fix a typo on a client's website, or worse, when I'm trying to watch It's Always Sunny in Philadelphia and chill out. <br />I'll admit Arch is pretty fun to mess with though, even if in the absolute nerdiest and uninteresting-to-most-women way possible.
           </p>
-          <p>
-            If this About Me section seems choppy and disjointed, it's because it is. I just threw some sentences down at random.</p>
+          <p><strong>
+            If this About Me section seems choppy and disjointed, it's because it is. I just threw some sentences down at random.
+            </strong>
+            </p>
             <p>
+            <strong>
             I'll fix it up and add to it later when I'm feeling more Shakespearean and less humble.
+            </strong>
           </p>
           <Button as={Link} className="button" to='/contact' >Contact Me</Button>
 

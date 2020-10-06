@@ -5,6 +5,8 @@ import PageFooter from '../../components/PageFooter';
 import SideBar from '../../components/Sidebar/index'
 //import Shoptop from '../assets/images/sdcoast.jpg'
 
+import AutomationPage from '../../components/PageComponents/Portfolio/Automation/Page'
+
 
 const sections = [
     { id: 'shoptop', name: 'Featured', icon: 'fa-home' },
@@ -17,24 +19,9 @@ const Automation = () => (
     <Layout>
         <SideBar /*sections={sections}*/ />
         
-        <div id="main">
-            {/*<section id="shoptop" >
-                <div className="container">
-                    <div style={{
-                        maxWidth: "100%",
-                        margin: "1rem 2rem"
-                    }} >
-                        <img src={Shoptop} 
-                        style={{
-                            width: "100%",
-                        }}/>
-                    </div>
-                </div>
 
-                    </section>*/}
-            <br />
+            <AutomationPage />
 
-        </div>
 
     </Layout>
 )
